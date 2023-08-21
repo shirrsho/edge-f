@@ -3,22 +3,33 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
-    <div className="bg-white text-white shadow w-full p-3 fixed flex items-center justify-between">
-        <div className="flex items-center">
-            <div className="flex items-center">
+    <div className="bg-white shadow w-full pt-5 pb-5 fixed flex items-center justify-center">
+            {/* <div className="flex items-center">
                 <img src="https://www.emprenderconactitud.com/img/POC%20WCS%20(1).png" alt="Logo" className="w-28 h-18 mr-2"/>
                 <h2 className="font-bold text-xl">Edge</h2>
+            </div> */}
+            <div className="relative max-w-md w-full flex space-x-5">
+                  <div className="absolute top-1 left-2 inline-flex items-center p-2">
+                      <i className="fas fa-search text-gray-400"></i>
+                  </div>
+                <select className="w-full h-10 pl-5 pr-5 py-1 text-base placeholder-gray-500 border rounded-full focus:shadow-outline" type="search" placeholder="Queries...">
+                  <option value="volvo">Companies with valid Agreement</option>
+                  <option value="volvo">All Running Batches</option>
+                  <option value="volvo">All Recruited Trainees</option>
+                </select>
+                <button className="bg-gray-800 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-full">
+                        Execute
+                  </button>
             </div>
-            <div className="md:hidden flex items-center">
+            {/* <div className="md:hidden flex items-center">
                 <button id="menuBtn">
                     <i className="fas fa-bars text-gray-500 text-lg"></i>
                 </button>
-            </div>
-        </div>
+            </div> */}
     </div>
 
-    <div className="flex-1 flex flex-wrap mt-20">
-        <div className="p-2 bg-white w-full md:w-60 flex flex-col md:flex" id="sideNav">
+    <div className="flex-1 flex flex-wrap pt-20">
+        <div className="bg-white w-full md:w-60 flex flex-col md:flex" id="sideNav">
             <nav className="fixed">
                 <a className="block text-gray-500 py-2.5 px-4 my-4 rounded transition duration-200 hover:bg-gradient-to-r hover:text-gray-800" href="#">
                     <i className="fas fa-home mr-2"></i>New Agreement
@@ -59,7 +70,7 @@ export default function Home() {
                       <i className="fas fa-search text-gray-400"></i>
                   </div>
                 <input className="w-full h-10 pl-10 pr-4 py-1 text-base placeholder-gray-500 border rounded-full focus:shadow-outline" type="search" placeholder="Search..."/>
-              </div>
+            </div>
             <div className="mt-8 bg-white p-4 shadow rounded-lg">
                 <h2 className="text-gray-500 text-lg font-semibold pb-4">Due Payment</h2>
                 <div className="my-1"></div>
