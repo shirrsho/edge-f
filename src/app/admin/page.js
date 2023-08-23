@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/login.css'
 import Link from 'next/link'
+import Icon from '@/factories/icon'
 
 function Login() {
     return (
