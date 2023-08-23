@@ -4,10 +4,8 @@ import Table1 from "@/components/tables/table1";
 import Table2 from "@/components/tables/table2";
 import Topbar from "@/components/topbar";
 import ChartFactory from "@/factories/chart";
-import Loading from "./loading";
 
-export default function Home() {
-
+function AdminDash() {
   const combodata = [
     [
       "Year",
@@ -44,7 +42,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Topbar />
       <div className="flex-1 flex flex-wrap pt-20">
-        {/* <Sidebar /> */}
+        <Sidebar />
         <div className="flex-1 p-4 w-full md:w-1/2">
 
           <div className="mt-8 flex flex-col">
@@ -61,3 +59,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default AdminDash
