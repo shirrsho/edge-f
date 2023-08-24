@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Topbar />
-      <div className="flex-1 flex flex-wrap pt-20">
+      <div className="flex-1 flex flex-wrap pt-20 p-5">
         {/* <Sidebar /> */}
         <div className="flex-1 p-4 w-full md:w-1/2">
 
