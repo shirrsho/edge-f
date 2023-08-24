@@ -3,7 +3,7 @@ import React from 'react'
 function Table1() {
   return (
     <div className="bg-white p-4 shadow rounded-lg">
-            <h2 className="text-gray-500 text-lg font-semibold pb-4">Due Payment</h2>
+            <h2 className="text-gray-500 text-lg font-semibold pb-4">Due Payments</h2>
             <div className="my-1"></div>
             <div className="bg-gradient-to-r from-cyan-300 to-gray-800 h-px mb-6"></div>
             <table className="w-full table-auto text-sm">
